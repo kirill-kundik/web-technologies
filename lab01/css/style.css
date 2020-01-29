@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .large-font {
     font-size: 1.2em;
     color: #123456;
@@ -77,4 +81,150 @@ nav li a:visited {
 #zamovnyky {
     border: 1px solid #000000;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 0 0 0 0;
+    border: none;
+}
+
+.col-3 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.col-2 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+#first {
+    overflow-y: scroll;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    width: 400px;
+    height: 300px;
+}
+
+#second {
+    border: 1px solid black;
+    margin: 1px;
+    padding: 2px;
+    background: url("http://mediasat.info/wp-content/uploads/2019/11/Google.jpg") fixed no-repeat center 100%;
+}
+
+#third {
+    border: 1px solid black;
+    margin: 1px;
+    padding: 2px;
+    column-count: 4;
+    column-gap: 20px;
+    text-align: justify;
+}
+
+#cancelBtn:enabled {
+    font-size: 1.5em;
+}
+
+#cancelBtn:disabled {
+    opacity: 40%;
+}
+
+#saveBtn:enabled {
+    font-size: 1.3em;
+}
+
+#saveBtn:disabled {
+    opacity: 0.5;
+}
+
+#four {
+    font-family: 'Sigmar One', cursive;
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid darkgray;
+    margin: 10px;
+    padding: 5px;
+}
+
+#four .left-img {
+    float: left;
+    margin: 7px 7px 7px 0;
+}
+
+#text-shadow {
+    text-shadow: #FC0 1px 0 10px;
+}
+
+#number1 {
+    padding: 3px;
+    margin: 2px;
+    border: 1px solid green;
+    background-color: #1c70a2;
+    border-radius: 15px;
+}
+
+#number2 {
+    padding: 3px;
+    margin: 5px;
+    border: 4px double lightcoral;
+    background: url("http://mediasat.info/wp-content/uploads/2019/11/Google.jpg") repeat;
+}
+
+#number3 {
+    padding: 4px;
+    margin: 1px;
+    border: 3px dotted lightblue;
+    background-image: linear-gradient(to right, red, yellow, green);
+}
+
+#translate {
+    padding: 4px;
+    margin: 1px;
+    border: 3px dotted lightblue;
+}
+
+#translate:hover {
+    transform: translate(200px);
+}
+
+#rotate {
+    padding: 4px;
+    margin: 1px;
+    border: 3px dotted lightblue;
+}
+
+#rotate:hover {
+    transform: rotate(90deg);
+}
+
+#scale {
+    padding: 4px;
+    margin: 1px;
+    border: 3px dotted lightblue;
+}
+
+#scale:hover {
+    transform: scale(2);
+}
+
+#last {
+    padding: 4px;
+    margin: 1px;
+    border: 3px dotted lightblue;
+    background-image: linear-gradient(to right, red, yellow, green);
+}
+
+#last:hover {
+    width: 100px;
+    padding: 3px;
+    margin: 5px;
+    border: 4px double lightcoral;
+    background: url("http://mediasat.info/wp-content/uploads/2019/11/Google.jpg") repeat;
 }

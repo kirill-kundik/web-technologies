@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Title</title>
 </head>
@@ -18,20 +19,45 @@
         Alicia Keys
     </blockquote>
 </div>
-<nav>
-    <ul>
-        <li><a href="#aboutus">Про нас</a></li>
-        <li><a href="#organy">Контролюючі органи</a></li>
-        <li><a href="#documents">Установчі документи</a></li>
-        <li><a href="#poslugy">Послуги</a></li>
-        <li><a href="#zamovnyky">Наші замовники</a></li>
-        <li><a href="#poslugyDet">Послуги (детально)</a></li>
-        <li><a href="#finance">Фінансові показники</a></li>
-        <li><a href="#contacts">Контакти</a></li>
-    </ul>
-</nav>
+<div class="row">
+    <div class="col-3">
+        <nav>
+            <ul>
+                <li><a href="#aboutus">Про нас</a></li>
+                <li><a href="#organy">Контролюючі органи</a></li>
+                <li><a href="#documents">Установчі документи</a></li>
+                <li><a href="#poslugy">Послуги</a></li>
+                <li><a href="#zamovnyky">Наші замовники</a></li>
+                <li><a href="#poslugyDet">Послуги (детально)</a></li>
+                <li><a href="#finance">Фінансові показники</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="organy" class="col-3">
+        <h3>Контролюючі органи</h3>
+        <a href="https://rada.gov.ua/">Парламент</a>
+        <a href="https://www.president.gov.ua/">Президент</a>
+        <a href="https://www.kmu.gov.ua/">Кабінет Міністрів</a>
+    </div>
+    <div id="documents" class="col-3">
+        <h3>Установчі документи</h3>
+        <a href="files/statut.txt">Статут</a>
+        <a href="files/dogovir.txt">Договір</a>
+        <a href="files/sertifikat.txt">Сертифікат</a>
+    </div>
+</div>
 <div>
-    <iframe src="https://www.epam-group.ru/"></iframe>
+    <div class="row">
+        <div class="col-2">
+            <iframe src="https://www.epam-group.ru/"></iframe>
+        </div>
+        <div class="col-2">
+            <video controls>
+                <source src="files/video.mp4" type="audio/mp3">
+            </video>
+        </div>
+    </div>
     <figure>
         <img src="images/diagram.png" alt="The Pulpit Rock" width="487" height="490">
         <p>Не підтримка Вашим браузером елементів HTML5</p>
@@ -67,18 +93,6 @@
         with the dry season in Tanzania.
     </p>
 </div>
-<div id="organy">
-    <h3>Контролюючі органи</h3>
-    <a href="https://rada.gov.ua/">Парламент</a>
-    <a href="https://www.president.gov.ua/">Президент</a>
-    <a href="https://www.kmu.gov.ua/">Кабінет Міністрів</a>
-</div>
-<div id="documents">
-    <h3>Установчі документи</h3>
-    <a href="files/statut.txt">Статут</a>
-    <a href="files/dogovir.txt">Договір</a>
-    <a href="files/sertifikat.txt">Сертифікат</a>
-</div>
 <div>
     <p>We open
         <time>10:00</time>
@@ -87,23 +101,25 @@
         everyday.
     </p>
 </div>
-<div id="poslugy">
-    <h3>Послуги</h3>
-    <ul>
-        <li>Подорож за кордон</li>
-        <li>Подорож Києвом</li>
-        <li>Подорож в Житомир</li>
-        <li>Подорож в Умань</li>
-    </ul>
-</div>
-<div id="zamovnyky">
-    <h3>Наші замовники</h3>
-    <ol>
-        <li>DHL</li>
-        <li>Deutshe Bahn</li>
-        <li>American airlines</li>
-        <li>British airlines</li>
-    </ol>
+<div class="row">
+    <div id="poslugy" class="col-2">
+        <h3>Послуги</h3>
+        <ul>
+            <li>Подорож за кордон</li>
+            <li>Подорож Києвом</li>
+            <li>Подорож в Житомир</li>
+            <li>Подорож в Умань</li>
+        </ul>
+    </div>
+    <div id="zamovnyky" class="col-2">
+        <h3>Наші замовники</h3>
+        <ol>
+            <li>DHL</li>
+            <li>Deutshe Bahn</li>
+            <li>American airlines</li>
+            <li>British airlines</li>
+        </ol>
+    </div>
 </div>
 <div id="poslugyDet">
     <h3>Послуги (детально)</h3>
@@ -249,6 +265,8 @@
                 <p contenteditable="true">Абзац тексту, який можна редагувати</p>
             </div>
             <input type="submit" value="Надіслати запит">
+            <input value="Відміна" id="cancelBtn">
+            <input value="Зберегти" id="saveBtn" disabled>
         </fieldset>
     </form>
     <details>
@@ -271,10 +289,204 @@
         <source src="files/audio.mp3" type="audio/mp3">
     </audio>
 </div>
-<div>
-    <video controls>
-        <source src="files/video.mp4" type="audio/mp3">
-    </video>
+
+<div id="first">
+    <p>
+        Nullam in risus et nunc accumsan pretium. Pellentesque lorem sapien, interdum id tristique at, hendrerit id
+        nunc. Suspendisse pretium enim ac semper mattis. Morbi finibus justo non quam porttitor posuere. Integer
+        suscipit molestie nisi. Cras tempus molestie magna eu euismod. Mauris porttitor varius eleifend. Proin vehicula
+        ante vel enim ullamcorper, eu euismod est molestie.
+    </p>
+    <p>
+        Suspendisse nec velit cursus, tincidunt eros efficitur, tristique sapien. Pellentesque sit amet lacus vitae quam
+        varius faucibus sit amet eu ipsum. Curabitur molestie diam nec nisi iaculis pharetra. Mauris vitae placerat
+        risus. Praesent dapibus commodo mollis. Vivamus enim purus, ultrices in egestas id, viverra ut felis. Class
+        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nec gravida ex.
+        Maecenas mollis maximus libero, vitae accumsan mauris imperdiet ac. Integer posuere mi urna, non mattis ex
+        laoreet ac. Integer semper nunc eu neque faucibus, et maximus dolor lobortis. Nunc rutrum elit arcu, nec commodo
+        lectus semper vel.
+    </p>
+    <p>
+        In velit risus, molestie et posuere vel, dapibus sit amet eros. In vehicula augue quis eros tincidunt, eget
+        egestas massa fermentum. Fusce vel molestie elit. Nunc eu justo ac erat interdum tincidunt. Suspendisse lorem
+        dolor, tristique rhoncus ligula quis, maximus pellentesque arcu. In suscipit, diam at rutrum ultrices, purus
+        nibh tincidunt nibh, eget fringilla nulla nisi id sem. Praesent ut semper orci, ut tempor leo. Sed hendrerit
+        rhoncus enim, sagittis blandit mauris volutpat a. Donec ultrices vehicula mollis. Nullam eu vestibulum lorem, ut
+        facilisis mi. Morbi vel mi mauris. Nullam nec eleifend enim.
+    </p>
 </div>
+
+<div id="second">
+    <p>
+        Nullam in risus et nunc accumsan pretium. Pellentesque lorem sapien, interdum id tristique at, hendrerit id
+        nunc. Suspendisse pretium enim ac semper mattis. Morbi finibus justo non quam porttitor posuere. Integer
+        suscipit molestie nisi. Cras tempus molestie magna eu euismod. Mauris porttitor varius eleifend. Proin vehicula
+        ante vel enim ullamcorper, eu euismod est molestie.
+    </p>
+    <p>
+        Suspendisse nec velit cursus, tincidunt eros efficitur, tristique sapien. Pellentesque sit amet lacus vitae quam
+        varius faucibus sit amet eu ipsum. Curabitur molestie diam nec nisi iaculis pharetra. Mauris vitae placerat
+        risus. Praesent dapibus commodo mollis. Vivamus enim purus, ultrices in egestas id, viverra ut felis. Class
+        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nec gravida ex.
+        Maecenas mollis maximus libero, vitae accumsan mauris imperdiet ac. Integer posuere mi urna, non mattis ex
+        laoreet ac. Integer semper nunc eu neque faucibus, et maximus dolor lobortis. Nunc rutrum elit arcu, nec commodo
+        lectus semper vel.
+    </p>
+    <p>
+        In velit risus, molestie et posuere vel, dapibus sit amet eros. In vehicula augue quis eros tincidunt, eget
+        egestas massa fermentum. Fusce vel molestie elit. Nunc eu justo ac erat interdum tincidunt. Suspendisse lorem
+        dolor, tristique rhoncus ligula quis, maximus pellentesque arcu. In suscipit, diam at rutrum ultrices, purus
+        nibh tincidunt nibh, eget fringilla nulla nisi id sem. Praesent ut semper orci, ut tempor leo. Sed hendrerit
+        rhoncus enim, sagittis blandit mauris volutpat a. Donec ultrices vehicula mollis. Nullam eu vestibulum lorem, ut
+        facilisis mi. Morbi vel mi mauris. Nullam nec eleifend enim.
+    </p>
+</div>
+
+<div id="third">
+    <p>
+        Nullam in risus et nunc accumsan pretium. Pellentesque lorem sapien, interdum id tristique at, hendrerit id
+        nunc. Suspendisse pretium enim ac semper mattis. Morbi finibus justo non quam porttitor posuere. Integer
+        suscipit molestie nisi. Cras tempus molestie magna eu euismod. Mauris porttitor varius eleifend. Proin vehicula
+        ante vel enim ullamcorper, eu euismod est molestie.
+    </p>
+    <p>
+        Suspendisse nec velit cursus, tincidunt eros efficitur, tristique sapien. Pellentesque sit amet lacus vitae quam
+        varius faucibus sit amet eu ipsum. Curabitur molestie diam nec nisi iaculis pharetra. Mauris vitae placerat
+        risus. Praesent dapibus commodo mollis. Vivamus enim purus, ultrices in egestas id, viverra ut felis. Class
+        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nec gravida ex.
+        Maecenas mollis maximus libero, vitae accumsan mauris imperdiet ac. Integer posuere mi urna, non mattis ex
+        laoreet ac. Integer semper nunc eu neque faucibus, et maximus dolor lobortis. Nunc rutrum elit arcu, nec commodo
+        lectus semper vel.
+    </p>
+    <p>
+        In velit risus, molestie et posuere vel, dapibus sit amet eros. In vehicula augue quis eros tincidunt, eget
+        egestas massa fermentum. Fusce vel molestie elit. Nunc eu justo ac erat interdum tincidunt. Suspendisse lorem
+        dolor, tristique rhoncus ligula quis, maximus pellentesque arcu. In suscipit, diam at rutrum ultrices, purus
+        nibh tincidunt nibh, eget fringilla nulla nisi id sem. Praesent ut semper orci, ut tempor leo. Sed hendrerit
+        rhoncus enim, sagittis blandit mauris volutpat a. Donec ultrices vehicula mollis. Nullam eu vestibulum lorem, ut
+        facilisis mi. Morbi vel mi mauris. Nullam nec eleifend enim.
+    </p>
+</div>
+
+<div id="four">
+    <p>
+        Nullam in risus et nunc accumsan pretium. Pellentesque lorem sapien, interdum id tristique at, hendrerit id
+        nunc. Suspendisse pretium enim ac semper mattis. Morbi finibus justo non quam porttitor posuere. Integer
+        suscipit molestie nisi. Cras tempus molestie magna eu euismod. Mauris porttitor varius eleifend. Proin vehicula
+        ante vel enim ullamcorper, eu euismod est molestie.
+    </p>
+    <p>
+        <img src="http://mediasat.info/wp-content/uploads/2019/11/Google.jpg" alt="google logo" class="left-img">
+        Suspendisse nec velit cursus, tincidunt eros efficitur, tristique sapien. Pellentesque sit amet lacus vitae quam
+        varius faucibus sit amet eu ipsum. Curabitur molestie diam nec nisi iaculis pharetra. Mauris vitae placerat
+        risus. Praesent dapibus commodo mollis. Vivamus enim purus, ultrices in egestas id, viverra ut felis. Class
+        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nec gravida ex.
+        Maecenas mollis maximus libero, vitae accumsan mauris imperdiet ac. Integer posuere mi urna, non mattis ex
+        laoreet ac. Integer semper nunc eu neque faucibus, et maximus dolor lobortis. Nunc rutrum elit arcu, nec commodo
+        lectus semper vel.
+    </p>
+    <p>
+        In velit risus, molestie et posuere vel, dapibus sit amet eros. In vehicula augue quis eros tincidunt, eget
+        egestas massa fermentum. Fusce vel molestie elit. Nunc eu justo ac erat interdum tincidunt. Suspendisse lorem
+        dolor, tristique rhoncus ligula quis, maximus pellentesque arcu. In suscipit, diam at rutrum ultrices, purus
+        nibh tincidunt nibh, eget fringilla nulla nisi id sem. Praesent ut semper orci, ut tempor leo. Sed hendrerit
+        rhoncus enim, sagittis blandit mauris volutpat a. Donec ultrices vehicula mollis. Nullam eu vestibulum lorem, ut
+        facilisis mi. Morbi vel mi mauris. Nullam nec eleifend enim.
+    </p>
+</div>
+
+<h3 id="text-shadow">Это пример текстовой тени</h3>
+
+<div class="row">
+    <div class="col-3" id="number1">
+        <p>
+            In velit risus, molestie et posuere vel, dapibus sit amet eros. In vehicula augue quis eros tincidunt, eget
+            egestas massa fermentum. Fusce vel molestie elit. Nunc eu justo ac erat interdum tincidunt. Suspendisse
+            lorem
+            dolor, tristique rhoncus ligula quis, maximus pellentesque arcu. In suscipit, diam at rutrum ultrices, purus
+            nibh tincidunt nibh, eget fringilla nulla nisi id sem. Praesent ut semper orci, ut tempor leo. Sed hendrerit
+            rhoncus enim, sagittis blandit mauris volutpat a. Donec ultrices vehicula mollis. Nullam eu vestibulum
+            lorem, ut
+            facilisis mi. Morbi vel mi mauris. Nullam nec eleifend enim.
+        </p>
+    </div>
+    <div class="col-3" id="number2">
+        <p>
+            In velit risus, molestie et posuere vel, dapibus sit amet eros. In vehicula augue quis eros tincidunt, eget
+            egestas massa fermentum. Fusce vel molestie elit. Nunc eu justo ac erat interdum tincidunt. Suspendisse
+            lorem
+            dolor, tristique rhoncus ligula quis, maximus pellentesque arcu. In suscipit, diam at rutrum ultrices, purus
+            nibh tincidunt nibh, eget fringilla nulla nisi id sem. Praesent ut semper orci, ut tempor leo. Sed hendrerit
+            rhoncus enim, sagittis blandit mauris volutpat a. Donec ultrices vehicula mollis. Nullam eu vestibulum
+            lorem, ut
+            facilisis mi. Morbi vel mi mauris. Nullam nec eleifend enim.
+        </p>
+    </div>
+    <div class="col-3" id="number3">
+        <p>
+            In velit risus, molestie et posuere vel, dapibus sit amet eros. In vehicula augue quis eros tincidunt, eget
+            egestas massa fermentum. Fusce vel molestie elit. Nunc eu justo ac erat interdum tincidunt. Suspendisse
+            lorem
+            dolor, tristique rhoncus ligula quis, maximus pellentesque arcu. In suscipit, diam at rutrum ultrices, purus
+            nibh tincidunt nibh, eget fringilla nulla nisi id sem. Praesent ut semper orci, ut tempor leo. Sed hendrerit
+            rhoncus enim, sagittis blandit mauris volutpat a. Donec ultrices vehicula mollis. Nullam eu vestibulum
+            lorem, ut
+            facilisis mi. Morbi vel mi mauris. Nullam nec eleifend enim.
+        </p>
+    </div>
+</div>
+
+<div id="translate">
+    <p>
+        In velit risus, molestie et posuere vel, dapibus sit amet eros. In vehicula augue quis eros tincidunt, eget
+        egestas massa fermentum. Fusce vel molestie elit. Nunc eu justo ac erat interdum tincidunt. Suspendisse
+        lorem
+        dolor, tristique rhoncus ligula quis, maximus pellentesque arcu. In suscipit, diam at rutrum ultrices, purus
+        nibh tincidunt nibh, eget fringilla nulla nisi id sem. Praesent ut semper orci, ut tempor leo. Sed hendrerit
+        rhoncus enim, sagittis blandit mauris volutpat a. Donec ultrices vehicula mollis. Nullam eu vestibulum
+        lorem, ut
+        facilisis mi. Morbi vel mi mauris. Nullam nec eleifend enim.
+    </p>
+</div>
+
+<div id="rotate">
+    <p>
+        In velit risus, molestie et posuere vel, dapibus sit amet eros. In vehicula augue quis eros tincidunt, eget
+        egestas massa fermentum. Fusce vel molestie elit. Nunc eu justo ac erat interdum tincidunt. Suspendisse
+        lorem
+        dolor, tristique rhoncus ligula quis, maximus pellentesque arcu. In suscipit, diam at rutrum ultrices, purus
+        nibh tincidunt nibh, eget fringilla nulla nisi id sem. Praesent ut semper orci, ut tempor leo. Sed hendrerit
+        rhoncus enim, sagittis blandit mauris volutpat a. Donec ultrices vehicula mollis. Nullam eu vestibulum
+        lorem, ut
+        facilisis mi. Morbi vel mi mauris. Nullam nec eleifend enim.
+    </p>
+</div>
+
+<div id="scale">
+    <p>
+        In velit risus, molestie et posuere vel, dapibus sit amet eros. In vehicula augue quis eros tincidunt, eget
+        egestas massa fermentum. Fusce vel molestie elit. Nunc eu justo ac erat interdum tincidunt. Suspendisse
+        lorem
+        dolor, tristique rhoncus ligula quis, maximus pellentesque arcu. In suscipit, diam at rutrum ultrices, purus
+        nibh tincidunt nibh, eget fringilla nulla nisi id sem. Praesent ut semper orci, ut tempor leo. Sed hendrerit
+        rhoncus enim, sagittis blandit mauris volutpat a. Donec ultrices vehicula mollis. Nullam eu vestibulum
+        lorem, ut
+        facilisis mi. Morbi vel mi mauris. Nullam nec eleifend enim.
+    </p>
+</div>
+
+<div id="last">
+    <p>
+        In velit risus, molestie et posuere vel, dapibus sit amet eros. In vehicula augue quis eros tincidunt, eget
+        egestas massa fermentum. Fusce vel molestie elit. Nunc eu justo ac erat interdum tincidunt. Suspendisse
+        lorem
+        dolor, tristique rhoncus ligula quis, maximus pellentesque arcu. In suscipit, diam at rutrum ultrices, purus
+        nibh tincidunt nibh, eget fringilla nulla nisi id sem. Praesent ut semper orci, ut tempor leo. Sed hendrerit
+        rhoncus enim, sagittis blandit mauris volutpat a. Donec ultrices vehicula mollis. Nullam eu vestibulum
+        lorem, ut
+        facilisis mi. Morbi vel mi mauris. Nullam nec eleifend enim.
+    </p>
+</div>
+
 </body>
 </html>
