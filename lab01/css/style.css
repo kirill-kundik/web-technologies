@@ -1,0 +1,80 @@
+.large-font {
+    font-size: 1.2em;
+    color: #123456;
+}
+
+.middle-font {
+    font-size: 12px;
+    color: rgb(20, 20, 20);
+}
+
+#small-font {
+    font-size: 60%;
+    color: darkblue;
+}
+
+#aboutus > p:first-letter {
+    font-size: 2em;
+}
+
+#poslugy > li {
+    color: #000700;
+    background: darkgray;
+}
+
+#poslugyDet > dt {
+    color: #baaa0a;
+    background: #feef02;
+}
+
+#poslugyDet > dd {
+    color: #1c70a2;
+    background: #c0eadf;
+}
+
+#organy > a {
+    color: rgba(150, 150, 150, 0.7);
+}
+
+#organy a[href^="gov.ua"] {
+    font-weight: 900;
+    color: #696969;
+}
+
+* {
+    margin: 2px;
+}
+
+h3 {
+    color: white;
+    background-color: red;
+    padding: 5px;
+}
+
+nav li a {
+    font-size: 1.3em;
+    color: #611e25;
+}
+
+nav li a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #271025;
+}
+
+nav li a:visited {
+    color: #2381b3;
+}
+
+#finance table td {
+    background: #c8d6c8;
+}
+
+#finance table th {
+    background: #c1c19c;
+}
+
+#zamovnyky {
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
