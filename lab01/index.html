@@ -5,6 +5,9 @@
 <!--Container for page metadata-->
 <head>
     <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <title>Travel agency</title>
 </head>
 <!--Main part of page-->
@@ -49,7 +52,7 @@
 <!--About us section-->
 <div id="aboutus">
     <h3>About us</h3>
-    <p>
+    <p class="large-font">
         We are a <b>company that values and celebrates the environment</b>, <u>ensures our clients receive the best</u>
         care
         and attention
@@ -59,7 +62,7 @@
         for
         our staff.
     </p>
-    <p>
+    <p class="middle-font">
         We're <em>ethically, socially, ecologically</em> and environmentally founded <strong>Tour Company</strong>. <br>We
         maintain the highest standards
         in
@@ -69,7 +72,7 @@
         standard of Kilimanjaro trekking and expedition so
         travelers can experience a trip of a lifetime.
     </p>
-    <p>
+    <p class="small-font">
         Mount Kilimanjaro can be climbed all year round. Generally, the main tourist seasons are from mid-June to
         October,
         then from December to February via <abbr title="Dalsey, Hillblom and Lynn">DHL</abbr>.<br> These months coincide
@@ -194,11 +197,11 @@
             <legend>Заповніть форму нижче</legend>
             <label>
                 Ім'я
-                <input type="text" name="first_name" placeholder="Ім'я" maxlength="15">
+                <input type="text" name="first_name" placeholder="Ім'я" maxlength="15" autofocus tabindex="1">
             </label>
             <label>
                 Прізвище
-                <input type="text" name="last_name" placeholder="Прізвище" maxlength="25">
+                <input type="text" required name="last_name" placeholder="Прізвище" maxlength="25" tabindex="2">
             </label>
             <label>
                 По-батькові
@@ -212,7 +215,7 @@
             <p>Тип запиту</p>
             <label>
                 технічна підтримка
-                <input type="radio" name="request_type" value="tech-support" checked>
+                <input type="radio" name="request_type" value="tech-support" checked tabindex="4">
             </label>
             <label>
                 підтримка користувача
@@ -232,7 +235,7 @@
             </label>
             <label>
                 Текст запиту
-                <textarea name="request-text" cols="30" rows="10" placeholder="Текст запиту"></textarea>
+                <textarea name="request-text" cols="30" rows="10" tabindex="3" placeholder="Текст запиту"></textarea>
             </label>
             <label>
                 Дата запиту
@@ -246,9 +249,41 @@
                 Стаж користувача
                 <input type="number" name="user-experience" placeholder="Стаж користувача" min="0" max="50">
             </label>
+            <label>
+                Країна
+                <input type="text" name="country" pattern="[A-Za-z]{3}">
+            </label>
+            <label>
+                Email
+                <input type="email" name="email">
+            </label>
+            <label>
+                Пріоритетність запиту
+                <input type="color" name="priority" value="#00ff00">
+            </label>
+            <label>
+                Веб-сторінка
+                <input type="url" name="web-page">
+            </label>
+            <div>
+                <p contenteditable="true">Абзац тексту, який можна редагувати</p>
+            </div>
             <input type="submit" value="Надіслати запит">
         </fieldset>
     </form>
+    <div>
+        <canvas id="canvas" width="500" height="300" border="1px"></canvas>
+    </div>
+    <div>
+        <audio controls>
+            <source src="files/audio.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <div>
+        <video controls>
+            <source src="files/video.mp4" type="video/mp4">
+        </video>
+    </div>
     <details>
         <summary>&copy; Кундік, 2020</summary>
         <p>Всі права захищені</p>
