@@ -1,0 +1,46 @@
+input {
+    transition: background-color ease .5s;
+
+    &:hover {
+        background-color: azure;
+    }
+}
+
+label {
+    font-weight: bold;
+}
+
+code {
+    font-size: 20px;
+}
+
+.task-holder {
+    margin: 10px 0;
+
+    &:not(:first-of-type) {
+        margin-top: 50px;
+    }
+}
+
+.answer-holder {
+    padding: 10px;
+    border: 2px solid darkgray;
+    transition: all ease .5s;
+
+    &::before {
+        content: "Відповідь: ";
+    }
+
+    &:hover {
+        box-shadow: 5px 5px 4px #888888;
+        top: -3px;
+    }
+
+
+    &#productsCount {
+        margin-bottom: 20px;
+        &::before {
+            content: "Всього товарів в пам'яті: " !important;
+        }
+    }
+}
