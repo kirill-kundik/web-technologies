@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet/less" type="text/css" href="assets/less/styles.less"/>
+
+    <title>Kundik's Lab6</title>
+</head>
+<body>
+<div class="container">
+    <div class="task-holder">
+        <h2>Завдання 1</h2>
+        <div id="task1alert">
+
+        </div>
+        <div>
+            <p>Реалізувати функцію WordIndex(s, n) визначення позиції початку в рядку s слова з номером n ("слово" –
+                послідовність символів, що не містить пробілів).</p>
+            <form>
+                <div class="form-group">
+                    <label for="task1Text">Введіть рядок</label>
+                    <input type="text" class="form-control" id="task1Text" aria-describedby="task1Describe">
+                    <small id="task1Describe" class="form-text text-muted">"слово" –
+                        послідовність символів, що не містить пробілів</small>
+                </div>
+                <div class="form-group">
+                    <label for="task1Number">Номер слова</label>
+                    <input type="number" class="form-control" id="task1Number">
+                </div>
+                <div class="answer-holder" id="task1answer">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="task-holder">
+        <h2>Завдання 2</h2>
+        <div id="task2alert">
+
+        </div>
+        <div>
+            <p>Обчислити середнє арифметичне та середнє геометричне двох цілих чисел.</p>
+            <form>
+                <div class="form-group">
+                    <label for="task2Number1">Введіть перше число</label>
+                    <input type="number" class="form-control" id="task2Number1">
+                </div>
+                <div class="form-group">
+                    <label for="task2Number2">Введіть друге число</label>
+                    <input type="number" class="form-control" id="task2Number2">
+                </div>
+                <div class="answer-holder" id="task2answer">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="task-holder">
+        <h2>Завдання 3</h2>
+        <div id="task3alert">
+
+        </div>
+        <div>
+            <p>Обчислити функцію arccos(x) через ряд Тейлора: <img style="max-height: 50px" alt="Taylor's formula"
+                                                                   src="assets/img/task3.png">. Значення x – дійсне
+                число, n – ціле. Значення x та n
+                вводяться у формі. Результат вивести на форму разом з результатом, отриманим з застосуванням вбудованих
+                функцій для тригонометричних обчислень та порівняти їх для різних значень n.
+            </p>
+            <form>
+                <div class="form-group">
+                    <label for="task3Number1">Введіть <code>x</code></label>
+                    <input type="number" class="form-control" id="task3Number1">
+                </div>
+                <div class="form-group">
+                    <label for="task3Number2">Введіть <code>n</code></label>
+                    <input type="number" class="form-control" id="task3Number2">
+                </div>
+                <div class="answer-holder" id="task3answer">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="task-holder">
+        <h2>Завдання 4</h2>
+        <div id="task4alert">
+
+        </div>
+        <div>
+            <p>Обчислити площу та радіус вписаного у рівнобедрену трапецію кола за сторонами цієї трапеції.
+            </p>
+            <form>
+                <div class="form-group">
+                    <label for="task4Number1">Введіть довжину нижньої основи</label>
+                    <input type="number" class="form-control" id="task4Number1">
+                </div>
+                <div class="form-group">
+                    <label for="task4Number2">Введіть довжину верхньої основи</label>
+                    <input type="number" class="form-control" id="task4Number2">
+                </div>
+                <div class="form-group">
+                    <label for="task4Number3">Введіть довжину бічної сторони</label>
+                    <input type="number" class="form-control" id="task4Number3">
+                </div>
+                <div class="answer-holder" id="task4answer">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="task-holder">
+        <h2>Завдання 5</h2>
+        <div id="task5alert">
+
+        </div>
+        <div>
+            <p>Product: Найменування, Виробник, Ціна, Термін зберігання, Кількість. Створити масив об'єктів. Вивести: а)
+                список товарів для заданого найменування; б) список товарів для заданого найменування, ціна яких не
+                перевищує зазначеної; в) список товарів, термін зберігання яких більше заданого.
+            </p>
+            <div class="answer-holder" id="productsCount"></div>
+            <div id="productsDemo"></div>
+            <form>
+                <div class="form-group">
+                    <label for="task5Text1">Введіть найменування</label>
+                    <input type="text" class="form-control" id="task5Text1">
+                </div>
+                <div id="task51answer">
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-6">
+                        <label for="task5Text2">Введіть найменування</label>
+                        <input type="text" class="form-control" id="task5Text2">
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="task5Number1">Введіть ціну</label>
+                            <input type="number" class="form-control" id="task5Number1">
+                        </div>
+                    </div>
+                </div>
+                <div id="task52answer">
+
+                </div>
+                <div class="form-group">
+                    <label for="task5Date">Введіть термін зберігання</label>
+                    <input type="date" class="form-control" id="task5Date">
+                </div>
+                <div id="task53answer">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <details style="margin-top: 70px">
+        <summary>&copy; Кундік Кирило, ІПЗ-4, 2020</summary>
+        <p>Всі права захищені</p>
+        <p>Сайт створено в
+            <mark>Вебштормі</mark>
+            , все класно,
+            <mark>хтмл рулить</mark>
+            !
+        </p>
+    </details>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
