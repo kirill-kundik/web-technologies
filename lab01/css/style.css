@@ -1,0 +1,365 @@
+.large-font {
+  font-size: 1.5em;
+  color: #3b5998;
+}
+
+.middle-font {
+  font-size: 14px;
+  color: #8b9dc3;
+}
+
+.small-font {
+  font-size: 70%;
+  color: #3b5998;
+}
+
+div#aboutus > p:first-letter {
+  font-size: 2em;
+  color: #8b9dc3;
+}
+
+div#poslugy ul > li {
+  color: #8b9dc3;
+  background-color: #3b5998;
+}
+
+div#poslugyDet dt {
+  color: #dfe3ee;
+  background: #3b5998;
+}
+
+div#poslugyDet dd {
+  color: lightblue;
+  background-color: #3b5998;
+}
+
+div#organy a {
+  color: rgba(59, 89, 152, 0.8);
+}
+
+div#organy a[href*="gov.ua"] {
+  font-weight: bold;
+  color: #3b5998;
+}
+
+* {
+  margin: 2px;
+}
+
+h3 {
+  color: #f7f7f7;
+  background-color: #3b5998;
+}
+
+nav li a {
+  font-size: 1.2em;
+  color: #3b5998;
+}
+nav li a:hover {
+  font-weight: 500;
+  text-decoration: underline;
+  color: #f7f7f7;
+  background: #3b5998;
+}
+nav li a:visited {
+  color: #8b9dc3;
+}
+
+div#finance table td {
+  background: #c8c8c8;
+}
+
+div#finance table th {
+  background: #dfe3ee;
+}
+
+div#zamovnyky {
+  border: 1px solid #000000;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Three column layout*/
+.col-3 {
+  margin: 0;
+  float: left;
+  width: 33.33%;
+}
+
+/*Two column layout*/
+.col-2 {
+  margin: 0;
+  float: left;
+  width: 50%;
+}
+
+@media screen and (max-width: 991px) {
+  .col-3 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .col-3 {
+    width: 100%;
+  }
+
+  .col-2 {
+    width: 100%;
+  }
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#firstDiv {
+  margin: 2px;
+  padding: 2px;
+  border: 1px solid black;
+  overflow-y: scroll;
+  max-height: 200px;
+}
+
+#secondDiv {
+  margin: 1px;
+  padding: 1px;
+  border: 2px dotted #8b9dc3;
+  background: url("https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg") center fixed no-repeat;
+  background-size: 100%;
+}
+
+#thirdDiv {
+  margin: 0;
+  padding: 0;
+  border: 3px dashed #3b5998;
+  column-count: 4;
+  column-gap: 20px;
+  text-align: justify;
+}
+
+#fourthDiv {
+  width: 100vw;
+  margin: 3px;
+  padding: 5px;
+  border: 5px groove #3b5998;
+  max-width: 60%;
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
+#h3shadowed {
+  text-shadow: #3b5998 1px 0 10px;
+  background: none;
+  margin: 40px;
+  color: black;
+}
+
+#alignedImage {
+  width: 300px;
+  height: auto;
+  float: left;
+}
+
+#saveBtn:disabled {
+  color: #3b5998;
+  background-color: #8b9dc3;
+  width: 40px;
+  padding: 5px;
+}
+
+#saveBtn:enabled {
+  color: #dfe3ee;
+  background-color: #123456;
+  width: 50px;
+  padding: 2px;
+}
+
+#cancelBtn:disabled {
+  color: #3b5998;
+  background-color: #dfe3ee;
+  width: 100px;
+  padding: 15px;
+}
+
+#cancelBtn:enabled {
+  color: #000000;
+  background-color: #ffffff;
+  width: 60px;
+  padding: 1px;
+}
+
+#firstDivInRow {
+  margin: 1px;
+  padding: 3px;
+  border: 4px #3b5998;
+  background-color: #dfe3ee;
+  border-radius: 7px;
+}
+
+#secondDivInRow {
+  margin: 2px;
+  padding: 5px;
+  border: 3px dashed #3b5998;
+  background: url("https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg") repeat;
+}
+
+#thirdDivInRow {
+  margin: 3px;
+  padding: 7px;
+  border: 1px dotted lightblue;
+  background-image: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+}
+
+#firstDivIn2Row {
+  margin: 4px;
+  padding: 8px;
+  border: 7px double #3b5998;
+  transition: all 2s ease-in-out;
+}
+
+#firstDivIn2Row:hover {
+  transform: translate(2px, 10px);
+}
+
+#secondDivIn2Row {
+  margin: 3px;
+  padding: 7px;
+  border: 1px dotted #3b5998;
+  transition: all 2s ease-in-out;
+}
+
+#secondDivIn2Row:hover {
+  transform: rotate(15deg);
+}
+
+#thirdDivIn2Row {
+  margin: 3px;
+  padding: 2px;
+  border: 4px dashed #f7f7f7;
+  transition: all 2s ease-in-out;
+}
+
+#thirdDivIn2Row:hover {
+  transform: scale(1.2);
+}
+
+#anotherDiv {
+  transition: all 1s ease-in-out;
+  margin: 3px;
+  padding: 15px;
+  border: 1px solid black;
+  background: url("https://as.ftcdn.net/r/v1/pics/7b11b8176a3611dbfb25406156a6ef50cd3a5009/home/discover_collections/optimized/image-2019-10-11-11-36-27-681.jpg") center no-repeat;
+  background-size: 100%;
+  background-position-y: -50px;
+  height: 300px;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+#anotherDiv:hover {
+  width: 60%;
+  margin: 0 auto;
+  background-position-y: 0;
+  color: #ffffff;
+  text-shadow: black 2px 2px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.gallery__image {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms ease;
+  width: 33%;
+  height: 300px;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .gallery__image {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .gallery__image {
+    width: 100%;
+  }
+}
+.gallery__image > * {
+  opacity: 0;
+}
+.gallery__image:hover > * {
+  opacity: 1;
+}
+.gallery__image__title {
+  padding: 5px 14px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.gallery__image__text {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 14px;
+}
+.gallery__image:first-child {
+  background-image: url("../images/gallery-1.jpeg");
+}
+.gallery__image:first-child:hover {
+  z-index: 200;
+  transform: scale(1.4);
+}
+.gallery__image:nth-child(2) {
+  background-image: url("../images/gallery-2.jpeg");
+}
+.gallery__image:nth-child(2):hover {
+  z-index: 200;
+  transform: rotate(10deg);
+}
+.gallery__image:nth-child(3) {
+  background-image: url("../images/gallery-3.jpeg");
+}
+.gallery__image:nth-child(3):hover {
+  background-image: url("../images/gallery-3-2.jpeg");
+}
+.gallery__image:nth-child(4) {
+  background-image: url("../images/gallery-4.jpeg");
+}
+.gallery__image:nth-child(5) {
+  background-image: url("../images/gallery-5.jpeg");
+}
+.gallery__image:nth-child(6) {
+  background-image: url("../images/gallery-6.jpeg");
+}
+
+.div-class-0, .div-class-3, .div-class-2, .div-class-1 {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.div-class-1 {
+  background-color: red;
+}
+
+.div-class-2 {
+  background-color: orange;
+}
+
+.div-class-3 {
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */
