@@ -198,6 +198,9 @@ div#zamovnyky {
 }
 
 #firstDivIn2Row {
+    margin: 4px;
+    padding: 8px;
+    border: 7px double lawngreen;
     transition: all 2s ease-in-out;
 }
 
@@ -206,6 +209,9 @@ div#zamovnyky {
 }
 
 #secondDivIn2Row {
+    margin: 3px;
+    padding: 7px;
+    border: 1px dotted olive;
     transition: all 2s ease-in-out;
 }
 
@@ -214,6 +220,9 @@ div#zamovnyky {
 }
 
 #thirdDivIn2Row {
+    margin: 3px;
+    padding: 2px;
+    border: 4px dashed lightblue;
     transition: all 2s ease-in-out;
 }
 
